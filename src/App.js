@@ -1,12 +1,13 @@
-import { Form } from './5.Form';
+import { ThemeProvider } from './6.State/ThemeContext';
+import ThemedComponent from './6.State/ThemeComponent';
 import './App.css';
 import React from 'react';
 
-export const ReactApp = () => {
+const ReactApp = () => {
   return (
-    <div>
-      <Form />
-    </div>
+    <ThemeProvider>
+      <ThemedComponent />
+    </ThemeProvider>
   );
 };
 
